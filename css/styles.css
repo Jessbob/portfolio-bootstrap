@@ -1,6 +1,13 @@
 body {
   margin-bottom: 100px;
   font-size: 1.4em;
+  /* background: url("/img/lookingdownroad.jpg") no-repeat center center fixed; */
+  /* background: url("/img/nightsky.jpg") no-repeat center center fixed; */
+  background: url("/img/mountains.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 .links {
