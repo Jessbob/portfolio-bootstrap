@@ -1,0 +1,36 @@
+body {
+  margin-bottom: 100px;
+  font-size: 1.4em;
+}
+
+.text-animation {
+  animation: type 8s steps(48);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid whitesmoke;
+  width: 48ch;
+  font-size: 36px;
+  margin-top: 100px;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.863);
+  border-right-style: groove;
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+
+  100% {
+    width: 48ch;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .text-animation {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}

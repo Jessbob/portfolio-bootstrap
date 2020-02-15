@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Jesse Whitehead</title>
-    <link rel="shortcut icon" href="img/my_logo.ico" />
+    <link rel="shortcut icon" href="img/jwicon.png" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Kanit&display=swap"
@@ -16,6 +16,8 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -35,8 +37,8 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="mr-auto">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <body class="bg-secondary">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#"
         ><img src="img/jwlogo2.svg" alt="JW Development Logo" height="50px"
       /></a>
@@ -71,68 +73,89 @@
       </div>
     </nav>
 
-    <div class="content">
-      <div class="text-animation">
+    <div class="container">
+      <div class="text-animation text-light">
         If it looks good on paper . . . It will look better on the web!
       </div>
       <br />
-      <div class="profile">
-        <div class="logo-container">
-          <img src="img/jwlogo2.svg" alt="JW Development Logo" />
-        </div>
-        <h1>Welcome to my portfolio.</h1>
+      <div class="container justify-content-center"> 
+        <div class="container-fluid">
+        <img
+          src="img/jwlogo2.svg"
+          class="img-fluid"
+          alt="JW Development Logo"
+        />
+      </div>
+      <h1 class="text-light">Welcome to my portfolio.</h1>
 
-        My Name is Jesse Whitehead and I am a web developer from America
 
-        <p>
-          Take a look at the
-          <a href="work.html" style="text-decoration: underline;">Projects</a>
-          page and explore some of the web apps I have developed. The projects
-          range from simple HTML and CSS to modern sites using React, Angular,
-          Vue.js and styled with libraries such as Material Design and
-          Bootstrap. This portfolio page was developed using only HTML & CSS as
-          a way to show my abilities with those languages. If you have a project
-          in mind
-          <a href="contact.html" style="text-decoration: underline;">
-            Contact Me</a
-          >
-          for hire or freelance work.
-        </p>
-        <h2>
-          <a href="work.html">Check out some of my code</a>
-        </h2>
+      
+     <h3 class="text-light"> My Name is Jesse Whitehead and I am a web developer from America</h3>
+
+      <p class="text-light">
+        <img src="https://via.placeholder.com/150" class="float-left p-1"/>
+        Take a look at the
+        <a href="work.html" class="text-light" style="text-decoration: underline rgba(0, 0, 0, 0.50);">Projects</a>
+        page and explore some of the web apps I have developed. The projects
+        range from simple HTML and CSS to modern sites using React, Angular,
+        Vue.js and styled with libraries such as Material Design and Bootstrap.
+      <br />  
+      Have a project in mind or need a digital solution to help you stand out? 
+        <a href="contact.html" class="text-light"style="text-decoration: underline black;">
+          Contact Me</a
+        >
+        for hire or freelance work.</p><h4>Anything from optimizing images, custom email signitures to updating existing sites or developing a new solution from scratch!</h4>
+      
+      <h2>
+        <a href="work.html">Check out some of my code</a>
+      </h2>
+
+      <br />
+      <div class="language-logos-container">
+        <img src="img/html-logo.png" class="language-logo" height="75px" />
+        <img src="img/css-logo.png" class="language-logo" height="75px" />
+        <img
+          src="img/javascript-logo.png"
+          class="language-logo"
+          height="75px"
+        />
+        <img src="img/react-logo.png" class="language-logo" height="75px" />
+        <img src="img/angular-logo.png" class="language-logo" height="75px" />
+        <img src="img/vuejs-logo.png" class="language-logo" height="75px" />
+        <img
+          src="img/bootstrap-logo1.png"
+          class="language-logo"
+          height="75px"
+        />
       </div>
     </div>
 
-    <br />
-    <div class="language-logos-container">
-      <img src="img/html-logo.png" class="language-logo" height="75px" />
-      <img src="img/css-logo.png" class="language-logo" height="75px" />
-      <img src="img/javascript-logo.png" class="language-logo" height="75px" />
-      <img src="img/react-logo.png" class="language-logo" height="75px" />
-      <img src="img/angular-logo.png" class="language-logo" height="75px" />
-      <img src="img/vuejs-logo.png" class="language-logo" height="75px" />
-      <img src="img/bootstrap-logo1.png" class="language-logo" height="75px" />
-    </div>
-    <div class="footer-fix">
-      <footer class="page-footer">
-        Find me on<br />
-        <div class="social-media">
-          <a href="https://github.com/Jessbob" target="_blank"
-            ><img src="img/github.png" alt="Github" height="40px" width="40px"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/jesse-whitehead-4ba7a544"
-            target="_blank"
-            ><img
-              src="img/linkedin.png"
-              alt="LinkedIn"
-              height="40px"
-              width="40px"
-          /></a>
-          <br />
-        </div>
-      </footer>
-    </div>
+    <ul class="nav fixed-bottom bg-dark justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/Jessbob" target="_blank"
+          ><img src="img/github.png" alt="Github" height="40px" width="40px"
+        /></a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://www.linkedin.com/in/jesse-whitehead-4ba7a544"
+          target="_blank"
+          ><img src="img/linkedin.png" alt="LinkedIn" height="40px" width="40px"
+        /></a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="mailto:hello@jessewhitehead.com"
+          ><img
+            src="img/email.png"
+            alt=""
+            height="40"
+            width="40"
+          />
+          </a>
+      </li>
+    </ul>
   </body>
 </html>
