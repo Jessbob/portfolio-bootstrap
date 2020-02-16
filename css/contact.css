@@ -1,5 +1,6 @@
 body {
-  background: url("/img/lookingdownroad.jpg") no-repeat center center fixed;
+  background: url("https://jessbob.github.io/portfolio-bootstrap/img/lookingdownroad.jpg")
+    no-repeat center center fixed;
   /* background: url("/img/nightsky.jpg") no-repeat center center fixed;
   /* background: url("https://jessbob.github.io/portfolio-bootstrap/img/mountains.jpg") 
     no-repeat center center fixed; */

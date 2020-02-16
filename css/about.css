@@ -4,7 +4,8 @@ body {
   /* background: url("https://jessbob.github.io/portfolio-bootstrap/img/mountains.jpg")
     no-repeat center center fixed; */
   /* background: url("/img/canyon.jpg") no-repeat center center fixed; */
-  background: url("/img/wedding.jpg") no-repeat center center fixed;
+  background: url("https://jessbob.github.io/portfolio-bootstrap/img/wedding.jpg")
+    no-repeat center center fixed;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
