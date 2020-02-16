@@ -3,8 +3,11 @@ body {
   font-size: 1.4em;
   /* background: url("/img/lookingdownroad.jpg") no-repeat center center fixed; */
   /* background: url("/img/nightsky.jpg") no-repeat center center fixed; */
-  background: url("https://jessbob.github.io/portfolio-bootstrap/img/mountains.jpg")
-    no-repeat center center fixed;
+  /* background: url("https://jessbob.github.io/portfolio-bootstrap/img/mountains.jpg")
+    no-repeat center center fixed; */
+  /* background: url("/img/canyon.jpg") no-repeat center center fixed; */
+  background: url("/img/wedding.jpg") no-repeat center center fixed;
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -30,10 +33,6 @@ body {
   border-right-style: groove;
 }
 
-.projects {
-  margin-top: 100px;
-}
-
 @keyframes type {
   0% {
     width: 0ch;
@@ -42,6 +41,124 @@ body {
   100% {
     width: 48ch;
   }
+}
+
+.projects {
+  margin-top: 100px;
+}
+
+.bar {
+  height: 40px;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+  line-height: 30px;
+  font-size: 22px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+
+.bar::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 40px;
+  top: 0;
+  z-index: -2;
+  background: #c4d3e0;
+}
+
+.bar::after {
+  content: "";
+  background: white;
+  height: 40px;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  -webkit-animation: bar-before 1 1.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@-webkit-keyframes bar-before {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.bar1::after {
+  max-width: 90%;
+}
+
+.bar2::after {
+  max-width: 80%;
+}
+
+.bar3::after {
+  max-width: 60%;
+}
+
+.bar4::after {
+  max-width: 50%;
+}
+
+.bar5::after {
+  max-width: 70%;
+}
+
+.form-container {
+  max-width: 600px;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  margin: 100px auto 10px;
+  background-color: var(--dark-gray);
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  color: var(--white);
+}
+
+.form-contents {
+  width: 96%;
+  text-align: left;
+  margin: auto;
+}
+
+.form-inputs {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  height: 30px;
+  margin: auto;
+}
+
+.form-message {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+}
+
+.form-labels {
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.form-footer {
+  width: 96%;
+  text-align: right;
+  margin: auto;
+}
+
+.message-alert {
+  font-size: 18px;
+  float: left;
 }
 
 @media all and (max-width: 500px) {

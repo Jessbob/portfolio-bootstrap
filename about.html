@@ -13,99 +13,135 @@
 
     <link
       rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css" /> -->
- 
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="about-bg">
-    <header class="page-header">
-      <img
-        src="img/jwlogo2.svg"
-        alt="My Logo"
-        height="50px"
-        class="page-header__item"
-      />
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active"
-              >Home</a
+  <body class="bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"
+        ><img src="img/jwlogo2.svg" alt="JW Development Logo" height="50px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
             >
           </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item"
-              >Projects</a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
           </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item"
-              >About</a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="work.html">Projects</a>
           </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item"
-              >Contact</a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
-      </nav>
-    </header>
-    
-      <div class="content" >
-        <section class="about-content">
-          <div class="grid-about">
-            <div class="grid__item">
-              <h1>Thanks for taking the time to get to know me!</h1>  
-              <img src="img/my_portrait.jpg" class=about-portrait>
-                         
-              <p class="about-text">
-                 My name is Jesse Whitehead and I live in Topeka, KS with my wonderful wife and two kids. I love to invent, design, and build things both physically and digitally. I became interested in coding over  25 years ago at the age of 12 and the following year our school got the internet. Now while most of my classmates were content with simply surfing the web, I knew I had to figure out how it all worked.  I developed websites throughout high school and received a technical degree in computer repair and networking. Unfortunately, I didn't enjoy it as much and without any local options to pursue web development, I went out and got a basic job to pay the bills.  That job turned into an 18-year career in the optical industry that I enjoyed very much.  Throughout my career I honed my skills in production flow, customer experience, and educating both employees and customers in a friendly non-technical approach.  One of my biggest achievements was developing a lab management database that took us from the old days of orders filed away in a filing cabinet to the digital age where anything you wanted to know about any order was just a click away.  This allowed us to expand from two locations to 8 locations with a centralized lab to manufacture all the orders.  When it was required to upgrade our electronic health record system I learned SQL to be able to create a lab management interface in one of the most well know EHR systems.  This saved our employees a lot of time while still being able to store and track orders effectively. It was in learning those new skills and creating solutions that I realized how much I missed coding and developing so I decided to relaunch myself as a web developer.
-              </p>
-              </div>
-           
+      </div>
+    </nav>
 
-            <div class="grid__item">
-              <h2>My Skills</h2>
-              <div class="skills-graph">
-                <div class="bar bar1">HTML 90%</div>
-                <div class="bar bar2">CSS 80%</div>
-                <div class="bar bar3">JavaScript 60%</div>
-                <div class="bar bar4">React 50%</div>
-                <div class="bar bar5">Bootstrap 70%</div>
-              </div>
-            </div> 
+    <div class="container">
+      <div
+        clas="mx-auto d-block"
+        style="background-color: rgb(52, 58, 64, 0.7);"
+      >
+        <h1 class="text-light mt-5 pt-5">
+          Thanks for taking the time to get to know me!
+        </h1>
+
+        <p class="text-light p-2">
+          <img src="https://via.placeholder.com/150" class="float-right p-1" />
+          My name is Jesse Whitehead and I live in Topeka, KS with my wonderful
+          wife and two kids. I love to invent, design, and build things both
+          physically and digitally. I became interested in coding over 25 years
+          ago at the age of 12 and the following year our school got the
+          internet. Now while most of my classmates were content with simply
+          surfing the web, I knew I had to figure out how it all worked. I
+          developed websites throughout high school and received a technical
+          degree in computer repair and networking. Unfortunately, I didn't
+          enjoy it as much and without any local options to pursue web
+          development, I went out and got a basic job to pay the bills. That job
+          turned into an 18-year career in the optical industry that I enjoyed
+          very much. Throughout my career I honed my skills in production flow,
+          customer experience, and educating both employees and customers in a
+          friendly non-technical approach. One of my biggest achievements was
+          developing a lab management database that took us from the old days of
+          orders filed away in a filing cabinet to the digital age where
+          anything you wanted to know about any order was just a click away.
+          This allowed us to expand from two locations to 8 locations with a
+          centralized lab to manufacture all the orders. When it was required to
+          upgrade our electronic health record system I learned SQL to be able
+          to create a lab management interface in one of the most well know EHR
+          systems. This saved our employees a lot of time while still being able
+          to store and track orders effectively. It was in learning those new
+          skills and creating solutions that I realized how much I missed coding
+          and developing so I decided to relaunch myself as a web developer.
+        </p>
+        <div class="mx-auto d-block" style="width: 80%;">
+          <h2 class="text-light">My Skills</h2>
+          <div class="pb-5">
+            <div class="bar bar1">HTML 90%</div>
+            <div class="bar bar2">CSS 80%</div>
+            <div class="bar bar3">JavaScript 60%</div>
+            <div class="bar bar4">React 50%</div>
+            <div class="bar bar5">Bootstrap 70%</div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
-
-    <div class="footer-fix">
-      <footer class="page-footer">
-        Find me on<br />
-        <div class="social-media">
-          <a href="https://github.com/Jessbob" target="_blank"
-            ><img src="img/github.png" alt="Github" height="40" width="40"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/jesse-whitehead-4ba7a544"
-            target="_blank"
-            ><img
-              src="img/linkedin.png"
-              alt="LinkedIn"
-              height="40"
-              width="40"/></a
-          >
-          <br />
-        </div>
-      </footer>
-    </div>
+    <ul class="nav fixed-bottom bg-dark justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/Jessbob" target="_blank"
+          ><img src="img/github.png" alt="Github" height="40px" width="40px"
+        /></a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          href="https://www.linkedin.com/in/jesse-whitehead-4ba7a544"
+          target="_blank"
+          ><img src="img/linkedin.png" alt="LinkedIn" height="40px" width="40px"
+        /></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mailto:hello@jessewhitehead.com"
+          ><img src="img/email.png" alt="" height="40" width="40" />
+        </a>
+      </li>
+    </ul>
   </body>
 </html>
