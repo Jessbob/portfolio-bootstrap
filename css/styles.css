@@ -30,6 +30,10 @@ body {
   border-right-style: groove;
 }
 
+.projects {
+  margin-top: 100px;
+}
+
 @keyframes type {
   0% {
     width: 0ch;
