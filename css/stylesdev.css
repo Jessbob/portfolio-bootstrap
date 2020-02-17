@@ -1,14 +1,15 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 body {
   margin-bottom: 100px;
   font-size: 1.4em;
   /* background: url("/img/lookingdownroad.jpg") no-repeat center center fixed; */
   /* background: url("/img/nightsky.jpg") no-repeat center center fixed; */
   /* background: url("https://jessbob.github.io/portfolio-bootstrap/img/mountains.jpg")
-      no-repeat center center fixed; */
+    no-repeat center center fixed; */
   /* background: url("/img/canyon.jpg") no-repeat center center fixed; */
   /* background: url("/img/wedding.jpg") no-repeat center center fixed; */
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
@@ -20,7 +21,6 @@ body {
 }
 
 .text-animation {
-  -webkit-animation: type 8s steps(48);
   animation: type 8s steps(48);
   overflow: hidden;
   white-space: nowrap;
@@ -31,16 +31,6 @@ body {
   margin-left: -10px;
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.85);
   border-right-style: groove;
-}
-
-@-webkit-keyframes type {
-  0% {
-    width: 0ch;
-  }
-
-  100% {
-    width: 48ch;
-  }
 }
 
 @keyframes type {
@@ -83,26 +73,14 @@ body {
   content: "";
   background: white;
   height: 40px;
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
   transition: 0.7s;
   display: block;
   width: 100%;
-  -webkit-animation: bar-before 1 1.8s;
   animation: bar-before 1 1.8s;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-@-webkit-keyframes bar-before {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 100%;
-  }
 }
 
 @keyframes bar-before {
@@ -141,9 +119,8 @@ body {
   margin: 100px auto 10px;
   background-color: rgb(52, 58, 64, 0.9);
   padding: 10px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
-  color: undefined;
+  color: var(--white);
 }
 
 .form-contents {
@@ -156,7 +133,6 @@ body {
   width: 100%;
   border: 1px solid #6c757d;
   border-radius: 3px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   height: 30px;
   margin: auto;
@@ -168,7 +144,6 @@ body {
   margin: auto;
   border: 1px solid #6c757d;
   border-radius: 3px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 
