@@ -222,6 +222,10 @@ body {
     font-size: 18px;
   }
 
+  li {
+    font-size: 18px;
+  }
+
   .message-alert {
     font-size: 16px;
   }
